@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_ID">
+	<display-name>microBlog</display-name>
+  <servlet>
+    <servlet-name>RegistServlet</servlet-name>
+    <servlet-class>com.ambow.web.RegistServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>register</servlet-name>
+    <servlet-class>com.ambow.web.register</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RegistServlet</servlet-name>
+    <url-pattern>/RegistServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>register</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>com.ambow.web.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PublishBlogServlet</servlet-name>
+    <servlet-class>com.ambow.web.PublishBlogServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindNewerBlog</servlet-name>
+    <servlet-class>com.ambow.web.FindNewerBlog</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindCommentsList</servlet-name>
+    <servlet-class>com.ambow.web.FindCommentsList</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PublishComment</servlet-name>
+    <servlet-class>com.ambow.web.PublishComment</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MyBlogServlet</servlet-name>
+    <servlet-class>com.ambow.web.MyBlogServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PublishBlogServlet</servlet-name>
+    <url-pattern>/PublishBlogServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindNewerBlog</servlet-name>
+    <url-pattern>/FindNewerBlog</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindCommentsList</servlet-name>
+    <url-pattern>/FindCommentsList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PublishComment</servlet-name>
+    <url-pattern>/PublishComment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyBlogServlet</servlet-name>
+    <url-pattern>/MyBlogServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+  	<welcome-file>index.html</welcome-file>
+  	<welcome-file>index.htm</welcome-file>
+  	<welcome-file>index.jsp</welcome-file>
+  	<welcome-file>default.html</welcome-file>
+  	<welcome-file>default.htm</welcome-file>
+  	<welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
